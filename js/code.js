@@ -28,7 +28,8 @@ function Calculate(){
     }
 }
 
-//ALLOW ONE DECIMAL ONLY????
+//ALLOW ONE DECIMAL ONLY
+//NOTE: if decimal not working, refresh the page
 function decimal(anyVal) {
     if (allowComa === true) {
         outputScreen.value = outputScreen.value + anyVal;
@@ -36,18 +37,22 @@ function decimal(anyVal) {
     }
 }
 
-
-//alt method using array
-// function display(num)
-//     switch(num) {
-//         case '.':
-//             if (arr[arr.length-1]) == '.' 
-//     } else {
-//         output.innerhtml += num
-//         arr.push(num)
-//     }
+//alt method for singular decimal using array
+    //case 5
+// case `.`:
+//         if(arr[arr.length-1] == `+` || arr[arr.length-1] == `-` ||arr[arr.length-1] == `*`|| arr[arr.length-1] == `/` || arr[arr.length-1] == `.` ){
+//             output.innerHTML = output.innerHTML
+//         } else{
+//             output.innerHTML += num
+//             arr.push(num)
+//             console.log(arr)
+//         }
 //     break;
-//     default
+//     //by default - add to array and log
+//     default,
+//     output.innerHTML += num;
+//     arr.push(num)
+//     console.log(arr)
 
 
 
