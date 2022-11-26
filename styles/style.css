@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline :none;                 /* for the buttons */
+}
+
+body{
+
+    background-image: url(https://i.postimg.cc/4xY1yF3K/cal-bg-darkplant.webp);
+
+    /* background-image: url(https://i.postimg.cc/8cqzH5hg/cal-bg-dark-plant.jpg); 
+
+    /* background-image: url(https://i.postimg.cc/D0Wq0S29/c-HJpdm-F0-ZS9sci9pb-WFn-ZXMvd2-Vic2l0-ZS8y-MDIy-LTA5-L3-Jt-NTY5-ZGVza-Wdu-LXJlb-Wl4-LXNl-Yz-Et-MDAz-Lmpw-Zw.jpg); */
+    /* background-image: url(https://i.postimg.cc/zv5Ftz56/wp4502952-japanese-aesthetic-wallpapers.jpg); */
+    /* background-image: url(https://i.postimg.cc/fRwTw6Ts/wp4886766-meme-aesthetic-wallpapers.jpg); */
+    /* background-image: url(https://i.postimg.cc/Fs6DmQxd/wp9064731-bleach-aesthetic-wallpapers.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-image{
+    opacity: 50%;
+}
+
+.container{
+    height:100vh;               /* full height of display */
+    display: flex;
+    justify-content: center;    /* moves entire container (x) to center */
+    align-items: center;        /* moves entire container (y) to center */
+}
+
+.calculator{
+    background-color:rgb(245, 242, 242);
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px rgb(255, 255, 255),     /* inside of the box */
+                      5px 5px 12px  rgba(0,0,0,.16);    /* outside of the box */
+    display:grid;
+    grid-template-columns: repeat(4, 68px);     /* 4 columns with spacing of 68px */
+}
+
+input{
+    grid-column: span 4;
+    height: 70px;           /* display height */
+    width: 260px;           /* display width */
+    background-color: rgb(245, 242, 242);
+    box-shadow: inset -5px -5px 12px rgb(255, 255, 255),     /* inside of the box */
+                inset  5px 5px 12px rgba(0,0,0,0.16); /* right side bottom of the box */
+    border: none;           /* removes border around display box */ 
+    border-radius: 30px; 
+    color: rgb(70, 70, 70);      
+    font-size: 50px;
+    text-align: end;         /* numbers displayed at the right side */
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 20px;           /* number on right will now have a small gap to the right so it aligns correctly on the display */ 
+}
+
+button{
+    height: 48px;
+    width: 48px;
+    background-color: rgba(0, 0, 0, 0.425);
+    box-shadow:  -5px -5px 12px rgb(255, 255, 255),
+                  5px 5px 12px rgba(0, 0, 0, 0.190);
+    color:rgb(255, 255, 255);
+    border:none;
+    border-radius: 50%;      /* round buttons */
+    margin: 8px;             /* space the buttons correctly */
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.666);
+    box-shadow:  -5px -5px 12px rgb(255, 255, 255),
+                  5px 5px 12px rgba(0, 0, 0, 0.034); 
+}
+
+.equal{
+    width: 115px;
+    border-radius: 2%;
+    background-color: rgba(0, 0, 0, 0.425);
+    box-shadow:  -5px -5px 12px rgb(255, 255, 255),
+                  5px 5px 12px rgba(0,0,0,.16);;
+}
+.equal:hover{
+    background-color: rgba(250, 206, 135, 0.7);
+    box-shadow:  -5px -5px 12px rgb(255, 255, 255),
+                  5px 5px 12px rgba(0,0,0,.16);;
+}
+
+#all-clear:hover{
+    background-color: rgba(201, 136, 185, 0.7);
+    box-shadow:  -5px -5px 12px rgb(255, 255, 255),
+                  5px 5px 12px rgba(0,0,0,.16);;
+}
+
+#delete-btn:hover{
+    background-color: rgba(127, 110, 172, 0.7);
+    box-shadow:  -5px -5px 12px rgb(255, 255, 255),
+                  5px 5px 12px rgba(0,0,0,.16);;
+}

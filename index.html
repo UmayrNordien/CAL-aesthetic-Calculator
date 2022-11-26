@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="https://i.postimg.cc/bw5rjrKd/Compact-Disk-PNG-Image.png" width="100px" height="100px" alt="disk">
+    <title>CAL-aesthetics</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <span>美的 c a l </span>
+            <img src="https://i.postimg.cc/tRMc5cM5/maneki-neko.png" height=20px width=20px>
+            <input type="text" placeholder="0" id="output-screen">
+            <!--ROW 1-->
+            <button onClick="Clear()" id="all-clear">AC</button>
+            <button onClick="del()" id="delete-btn">DEL</button>
+            <button onClick="display('%')">%</button>
+            <button onClick="display('/')">/</button>
+            <!--ROW 2-->
+            <button onClick="display('7')">7</button>
+            <button onClick="display('8')">8</button>
+            <button onClick="display('9')">9</button>
+            <button onClick="display('*')">x</button>
+            <!--ROW 3-->
+            <button onClick="display('4')">4</button>
+            <button onClick="display('5')">5</button>
+            <button onClick="display('6')">6</button>
+            <button onClick="display('-')">-</button>
+            <!--ROW 4-->
+            <button onClick="display('1')">1</button>
+            <button onClick="display('2')">2</button>
+            <button onClick="display('3')">3</button>
+            <button onClick="display('+')">+</button>
+            <!--ROW 5-->
+            <button onClick="decimal('.')" id="decimal">.</button> <!--decimal-->
+            <button onClick="display('0')">0</button>
+            <button onClick="Calculate()" class="equal">=</button> <!--cal function-->
+
+        
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/code.js"></script>
+</body>
+</html>
