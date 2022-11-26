@@ -36,6 +36,8 @@ function decimal(anyVal) {
     }
 }
 
+
+//alt method using array
 // function display(num)
 //     switch(num) {
 //         case '.':
